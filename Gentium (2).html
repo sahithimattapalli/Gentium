@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+body{
+margin:0px;
+height:2000px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+.section{
+  height:1000px;
+  background-color:rgb(0, 0, 0);
+
+}
+.section2{
+  height:700px;
+  background-color:rgb(255, 255, 255);
+
+}
+
+header div{
+  padding-top:20px;
+  background-color:black;
+  position: sticky;
+}
+.grid1 > * {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 17px;
+  margin:0px auto;
+  width:1260px; 
+  border:3px solid greenyellow;
+}
+ header ul {
+  list-style-type: none;
+  margin: 0;
+  padding:30px 100px 50px 100px;
+  overflow: hidden;
+  background-color:black;
+  top: 0;
+  vertical-align: baseline;
+}
+.underline::after{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: rgba(250, 60, 76, 0.658);
+    transition: width .3s;
+}
+.home::after{
+  content: '';
+    display: block;
+    width: 40%;
+    height: 2px;
+    background: rgba(252, 106, 143, 0.863);
+   
+}
+.underline:hover::after
+{
+  width: 40%;
+}
+li:first-child{
+  float:left;
+  color:white;
+  text-align: center;
+  font-size: 30px;
+  
+}
+
+li {
+  float: right;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding-right:24px ;
+  padding-top:16px;
+  text-decoration: none;
+}
+#one{
+    
+    height:1000px;    
+    background: url("./bg_black2.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+}
+.pinkline { /* For the pink strip above the statement */
+  
+  position:relative;  
+  height:3px;
+  width:50px;
+  background-color:rgba(250, 68, 113, 0.863);
+  top:80px;
+  left:100px;
+  z-index: 1;
+}
+#mainheader{
+    margin-top:50px;
+    margin-left:100px;
+    width:700px;
+    display: inline-block;
+    color: white;
+    font-size: 40px;
+}
+
+
+.button_slide {
+  color: #FFF;
+  margin-left:100px;
+  margin-bottom: 100px;
+  border: 2px solid rgba(250, 68, 113, 0.863);
+  width:140px;
+  padding: 18px 36px;
+  display: block;  
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 rgba(250, 68, 113, 1);
+  transition: linear 0.7s;
+}
+
+.slide_right:hover {
+  box-shadow: inset 300px 0 0 0 rgba(250, 68, 113, 1);
+    
+}
+.grid-container{
+  
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top:20px;
+  grid-gap: 20px;
+  margin:0px 50px;
+}
+.agrid:first-child{
+  background-color:  rgba(248, 49, 76, 1);
+  height:358px;
+  box-shadow: 2px gray;
+}
+.agrid{
+  background-color: rgb(52, 52, 53);
+  height:358px;
+  transition:background-color 1s;
+  box-shadow: 10px gray;
+
+}
+.agrid:hover{
+  background-color:  rgba(248, 49, 76, 1);
+}
+.agrid_heading{
+  display:inline-block;
+  margin-top:50px;
+  margin-left:30px;
+  padding-bottom:10px;
+  font-size:1.2em;
+  color:white;
+}
+.line{
+  position:relative;  
+  margin-bottom:20px;
+  margin-left:30px;
+  height:2px;
+  width:50px;
+  background-color:rgba(248, 49, 76, 1);
+  transition: background-color 1s;
+  top:0px;
+  z-index: 1;
+}
+.agrid_content{
+  display:inline-block;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing:0.5px;
+  line-height: 20px;
+  margin: 0px 30px;
+  color:white;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.slide_right:hover {
+  color: #FFF;
+  box-shadow: inset 400px 0 0 0 rgb(243, 64, 94);
+}
+button {
+    border: none;
+  width: 380px;
+  height: 100px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px;
+ 
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+div.centerdiv{
+  
+  margin:0px auto;
+  width:1260px;
+  border:3px solid greenyellow;
+}
+div.headers{
+  display:block;
+  padding-top: 100px;
+  /* border:2px solid blue; */
+  padding-left:100px;
+  font-size: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;  
+}
+div.header2{
+  display:inline-block;
+  color:rgb(243, 64, 94);
+  font-size:20px;
+  line-height: 45px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight:bold;
+  padding-left:100px;
+}
+.servicegrid{
+  display:grid;
+  padding:70px;
+  /* border:1px solid blueviolet; */
+  grid-template-columns:1fr 1fr 1fr;
+  grid-gap:2px;
+  
+}
+.servicegrid > button{
+    width:350px;
+    text-align:left;
+    display: inline-block;
+    position: relative;
+    transition: ease-out 0.5s;
+    padding-left:30px;
+    background-color: rgb(241, 238, 238);
+    color: black; 
+    font-size:20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button:after {
+  padding:22px 40pX;
+  content: "\2192";
+  position: absolute;
+  top: 14px;
+  right: 0px;
+  transition: 0.5s;
+  color: rgb(119, 117, 117);
+}
+
+button:hover{
+  padding-left:50px;
+  background-color: rgb(243, 64, 94);
+  color: white;
+}
+
+button:hover:after {
+  opacity: 1;
+  padding-right:17px;
+}
+.carousel {
+  background: white;
+}
+
+.carousel-cell {
+  width: 70%;
+  height: 200px;
+  /* flex-box, center image in cell */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:         flex;
+  /* -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center; */
+}
+
+.carousel-cell img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  /* dim unselected */
+  opacity: 0.7;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+          transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+/* brighten selected image */
+.carousel-cell.is-selected img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-filter: none;
+          filter: none;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel-cell {
+    height: 400px;
+  }
+}
+
+@media screen and ( min-width: 960px ) {
+  .carousel-cell {
+    width: 35%;
+  }
+}
+
+/* buttons, no circle */
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  opacity: 0.9;
+}
+.flickity-prev-next-button:hover {
+  background:ghostwhite;
+  opacity: 1;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+/* closer to edge */
+.flickity-prev-next-button.previous { left: 0; }
+.flickity-prev-next-button.next { right: 0; }
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
+</style>
+</head>
+<body>
+<div class="section">
+  <div class="grid1">
+      <div id="one"> 
+    <header id="header">
+        <div></div>
+        <ul class="head">
+          <li>Gentium.</li>
+          <li><a class="underline" href="#about">Contact</a></li>
+          <li><a class="underline" href="#news">Blog</a></li>
+          <li><a class="underline" href="#contact">Client</a></li>
+          <li><a class="underline" href="#news">About</a></li>
+          <li><a class="underline" href="#about">Work</a></li>
+          <li><a class="underline" href="#contact">Services</a></li>
+          <li><a class="home" href="#about">Home</a></li>
+        </ul>
+    </header>
+   
+        <div class="pinkline"></div>
+        <div id="mainheader">
+            <h1>We're a digital agency.</h1>
+        </div>
+        <div class="button_slide slide_right">Getting Started</div>
+        <div class="grid-container">
+          <div class="agrid">
+              <div class="agrid_heading">
+            <img src="#" width=70px; height=70px><br><br><br>
+            Future Vision</div>
+            <div class="line"></div>
+            <div class="agrid_content">It is a long established fact that the reader will be disturbed by the readable content of the page</div>
+          </div>
+          <div class="agrid">
+              <div class="agrid_heading">
+                  <img src="#" width=70px; height=70px><br><br><br>
+                  Product Design</div>
+                  <div class="line"></div>
+                  <div class="agrid_content">It is a long established fact that the reader will be disturbed by the readable content of the page</div>
+          </div>
+          <div class="agrid">
+              <div class="agrid_heading">
+                  <img src="#" width=70px; height=70px><br><br><br>
+                  Innovative Solutions</div>
+                  <div class="line"></div>
+                  <div class="agrid_content">It is a long established fact that the reader will be disturbed by the readable content of the page</div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="section2">
+    <div class="centerdiv">
+        <div class="pinkline"></div>
+        <div class="headers">Services</div>
+        <div class="header2">WE WORK WITH YOU, NOT FOR YOU</div>
+        <div class="servicegrid">
+            <button>Digital Strategy</button>
+            <button>UX Design</button>
+            <button>Product Design</button>
+            <button>Content Strategy</button>
+            <button>Design & Concept</button>
+            <button>Social Media</button>
+            <button>Media Planning</button>
+            <button>Brand Identity</button>
+            <button>SEO Optimization</button>
+        </div>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="centerdiv">
+            <div class="pinkline"></div>
+            <div class="headers">Works</div>
+            <div class="header2">THINGS WE'VE MADE</div>
+            <!-- <div class="Viewall">View All</div> -->
+               
+            <div class="carousel js-flickity" style="outline-color: white;">
+               
+                <div class="carousel-cell">
+                  <img src="serv1.PNG" alt="cat tree" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="serv2.PNG" alt="submerged" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="serv3.PNG" alt="look-out" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="serv4.PNG" alt="One World Trade" />
+                </div>
+                <div class="carousel-cell">
+                  <img src="serv5.PNG" alt="drizzle" />
+                </div>
+                  <div class="carousel-cell">
+                  <img src="serv6.PNG" alt="cat nose" />
+                </div>
+              </div> 
+              <script src='https://npmcdn.com/flickity@2/dist/flickity.pkgd.js'></script>
+            
+          </div>
+      </div>
+        <div class="section2">
+          <div class="centerdiv">
+            <div class="straight line"></div>
+              <div class="pinkline"></div>
+              <div class="headers">About</div>
+              <div class="header2">WE'RE MORE THAN A DIGITAL AGENCY</div>
+          
+              </div>
+          </div>
+        
+</body>
+</html>
